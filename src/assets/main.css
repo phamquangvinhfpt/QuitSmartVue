@@ -1,51 +1,65 @@
 /* Global animations and styles */
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* Floating animation */
 @keyframes float {
-  0%, 100% { 
+  0%,
+  100% {
     transform: translateY(0px);
   }
-  50% { 
+  50% {
     transform: translateY(-20px);
   }
 }
 
 @keyframes floatSlow {
-  0%, 100% { 
+  0%,
+  100% {
     transform: translateY(0px) rotate(0deg);
   }
-  33% { 
+  33% {
     transform: translateY(-10px) rotate(1deg);
   }
-  66% { 
+  66% {
     transform: translateY(-5px) rotate(-1deg);
   }
 }
 
 @keyframes pulse-glow {
-  0%, 100% { 
+  0%,
+  100% {
     filter: drop-shadow(0 0 5px rgba(34, 197, 94, 0.5));
   }
-  50% { 
-    filter: drop-shadow(0 0 15px rgba(34, 197, 94, 0.8)) drop-shadow(0 0 25px rgba(34, 197, 94, 0.6));
+  50% {
+    filter: drop-shadow(0 0 15px rgba(34, 197, 94, 0.8))
+      drop-shadow(0 0 25px rgba(34, 197, 94, 0.6));
   }
 }
 
 @keyframes gradient-shift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes shimmer {
-  0% { background-position: -200px 0; }
-  100% { background-position: 200px 0; }
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
 }
 
 .animate-float {
@@ -67,7 +81,12 @@ body {
 }
 
 .shimmer {
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
   background-size: 200px 100%;
   animation: shimmer 1.5s infinite;
 }
@@ -98,4 +117,63 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Mobile-specific responsive utilities */
+@media (max-width: 640px) {
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .animate-float-slow {
+    animation: floatSlow 6s ease-in-out infinite;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.5);
+    transform: translateY(-1px);
+  }
+}
+
+/* Line clamp utility for text truncation */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Container responsive improvements */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Touch-friendly button improvements */
+@media (max-width: 768px) {
+  button {
+    min-height: 44px; /* iOS recommended touch target size */
+    min-width: 44px;
+  }
+}
+
+/* Improved text readability on mobile */
+@media (max-width: 640px) {
+  h1,
+  h2,
+  h3 {
+    line-height: 1.2;
+  }
+
+  p {
+    line-height: 1.6;
+  }
 }

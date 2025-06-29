@@ -2,16 +2,16 @@
   <div class="min-h-screen bg-gradient-to-b from-green-50 to-white">
     <!-- Header -->
     <header class="border-b glass sticky top-0 z-50">
-      <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex justify-between items-center">
         <div class="flex items-center space-x-2 animate-float-slow">
-          <Heart class="h-8 w-8 text-green-600 animate-pulse-glow" />
-          <span class="text-2xl font-bold text-gradient-green">QuitSmart</span>
+          <Heart class="h-6 w-6 sm:h-8 sm:w-8 text-green-600 animate-pulse-glow" />
+          <span class="text-lg sm:text-2xl font-bold text-gradient-green">QuitSmart</span>
         </div>
-        <div class="space-x-4">
-          <button class="px-4 py-2 text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-105 hover:cursor-pointer">
+        <div class="flex items-center space-x-2 sm:space-x-4">
+          <button class="px-3 py-2 sm:px-4 sm:py-2 text-sm sm:text-base text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-105 hover:cursor-pointer">
             Đăng nhập
           </button>
-          <button class="px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-all duration-300 hover:scale-105 hover:shadow-lg hover-glow hover:cursor-pointer">
+          <button class="px-4 py-2 sm:px-6 sm:py-2 text-sm sm:text-base bg-green-600 text-white rounded-lg hover:bg-green-700 transition-all duration-300 hover:scale-105 hover:shadow-lg hover-glow hover:cursor-pointer">
             Đăng ký ngay
           </button>
         </div>
@@ -19,35 +19,35 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="py-20 px-4">
+    <section class="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div class="container mx-auto text-center">
         <div 
           ref="heroBadge"
-          class="inline-block mb-4 px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium"
+          class="inline-block mb-4 px-3 py-2 sm:px-4 sm:py-2 bg-green-100 text-green-800 rounded-full text-xs sm:text-sm font-medium"
         >
           Ứng dụng cai thuốc lá thông minh
         </div>
         <h1 
           ref="heroTitle"
-          class="text-5xl font-bold text-gray-900 mb-6"
+          class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight"
         >
           Hành trình cai thuốc lá
           <span class="text-green-600 block">thành công của bạn</span>
         </h1>
         <p 
           ref="heroSubtitle"
-          class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto"
+          class="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto px-4"
         >
           Theo dõi tiến trình, nhận động viên và đạt được mục tiêu cai thuốc lá với sự hỗ trợ của công nghệ thông minh
         </p>
         <div 
           ref="heroButtons"
-          class="space-x-4"
+          class="flex flex-col sm:flex-row gap-4 sm:gap-0 sm:space-x-4 items-center justify-center px-4"
         >
-          <button class="px-8 py-4 bg-green-600 text-white rounded-lg text-lg font-semibold hover:bg-green-700 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:cursor-pointer">
+          <button class="w-full sm:w-auto px-6 py-3 sm:px-8 sm:py-4 bg-green-600 text-white rounded-lg text-base sm:text-lg font-semibold hover:bg-green-700 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:cursor-pointer">
             Bắt đầu ngay hôm nay
           </button>
-          <button class="px-8 py-4 border border-gray-300 text-gray-700 rounded-lg text-lg font-semibold hover:bg-gray-50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:cursor-pointer">
+          <button class="w-full sm:w-auto px-6 py-3 sm:px-8 sm:py-4 border border-gray-300 text-gray-700 rounded-lg text-base sm:text-lg font-semibold hover:bg-gray-50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:cursor-pointer">
             Tìm hiểu thêm
           </button>
         </div>
@@ -55,49 +55,49 @@
         <!-- Stats -->
         <div 
           ref="statsSection"
-          class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 max-w-4xl mx-auto"
+          class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mt-12 sm:mt-16 max-w-4xl mx-auto px-4"
         >
-          <div class="text-center transform hover:scale-105 transition-transform duration-300">
+          <div class="text-center transform hover:scale-105 transition-transform duration-300 p-4 bg-white rounded-lg shadow-sm">
             <div 
               ref="statUsers"
-              class="text-3xl font-bold text-green-600"
+              class="text-2xl sm:text-3xl font-bold text-green-600"
             >0+</div>
-            <div class="text-gray-600">Người dùng thành công</div>
+            <div class="text-sm sm:text-base text-gray-600">Người dùng thành công</div>
           </div>
-          <div class="text-center transform hover:scale-105 transition-transform duration-300">
+          <div class="text-center transform hover:scale-105 transition-transform duration-300 p-4 bg-white rounded-lg shadow-sm">
             <div 
               ref="statSuccess"
-              class="text-3xl font-bold text-green-600"
+              class="text-2xl sm:text-3xl font-bold text-green-600"
             >0%</div>
-            <div class="text-gray-600">Tỷ lệ thành công</div>
+            <div class="text-sm sm:text-base text-gray-600">Tỷ lệ thành công</div>
           </div>
-          <div class="text-center transform hover:scale-105 transition-transform duration-300">
+          <div class="text-center transform hover:scale-105 transition-transform duration-300 p-4 bg-white rounded-lg shadow-sm">
             <div 
               ref="statDays"
-              class="text-3xl font-bold text-green-600"
+              class="text-2xl sm:text-3xl font-bold text-green-600"
             >0 ngày</div>
-            <div class="text-gray-600">Thời gian trung bình</div>
+            <div class="text-sm sm:text-base text-gray-600">Thời gian trung bình</div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="py-20 px-4 bg-gray-50">
+    <section id="features" class="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div class="container mx-auto">
         <div 
           ref="featuresHeader"
-          class="text-center mb-16"
+          class="text-center mb-12 sm:mb-16"
         >
-          <h2 class="text-4xl font-bold text-gray-900 mb-4">Tính năng nổi bật</h2>
-          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Tính năng nổi bật</h2>
+          <p class="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto px-4">
             Hệ thống hỗ trợ toàn diện giúp bạn cai thuốc lá hiệu quả
           </p>
         </div>
 
         <div 
           ref="featuresGrid"
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
         >
           <div 
             v-for="(feature, index) in features" 
@@ -105,9 +105,9 @@
             :ref="(el) => { featureCards[index] = el as HTMLElement }"
             class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 p-6 transform hover:scale-105 hover:-translate-y-2"
           >
-            <component :is="feature.icon" :class="`h-12 w-12 ${feature.color} mb-4 transform transition-transform duration-300 hover:rotate-12`" />
-            <h3 class="text-xl font-bold text-gray-900 mb-2">{{ feature.title }}</h3>
-            <p class="text-gray-600 mb-4">{{ feature.description }}</p>
+            <component :is="feature.icon" :class="`h-10 w-10 sm:h-12 sm:w-12 ${feature.color} mb-4 transform transition-transform duration-300 hover:rotate-12`" />
+            <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2">{{ feature.title }}</h3>
+            <p class="text-sm sm:text-base text-gray-600 mb-4">{{ feature.description }}</p>
           </div>
         </div>
       </div>
@@ -123,21 +123,21 @@
     <QuitMethods />
 
     <!-- Success Stories Section -->
-    <section class="py-20 px-4">
+    <section class="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div class="container mx-auto">
         <div 
           ref="storiesHeader"
-          class="text-center mb-16"
+          class="text-center mb-12 sm:mb-16"
         >
-          <h2 class="text-4xl font-bold text-gray-900 mb-4">Câu chuyện thành công</h2>
-          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Câu chuyện thành công</h2>
+          <p class="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto px-4">
             Những người dùng thực tế đã thành công cai thuốc với QuitSmart
           </p>
         </div>
 
         <div 
           ref="storiesGrid"
-          class="grid grid-cols-1 md:grid-cols-3 gap-8"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
         >
           <div 
             v-for="(story, index) in successStories" 
@@ -145,15 +145,15 @@
             :ref="(el) => { storyCards[index] = el as HTMLElement }"
             class="bg-white rounded-lg shadow-lg p-6 text-center transform hover:scale-105 transition-all duration-500 hover:shadow-xl"
           >
-            <div class="w-16 h-16 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center transform transition-transform duration-300 hover:rotate-12">
-              <User class="h-8 w-8 text-gray-500" />
+            <div class="w-12 h-12 sm:w-16 sm:h-16 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center transform transition-transform duration-300 hover:rotate-12">
+              <User class="h-6 w-6 sm:h-8 sm:w-8 text-gray-500" />
             </div>
-            <h4 class="font-bold text-gray-900 mb-2">{{ story.name }}</h4>
+            <h4 class="text-base sm:text-lg font-bold text-gray-900 mb-2">{{ story.name }}</h4>
             <div class="text-sm text-gray-600 mb-4">
               <span class="font-semibold text-green-600">{{ story.smokeFreedays }} ngày</span> không hút thuốc
             </div>
-            <p class="text-gray-600 italic mb-4">"{{ story.quote }}"</p>
-            <div class="text-sm text-gray-500">
+            <p class="text-sm sm:text-base text-gray-600 italic mb-4 line-clamp-3">"{{ story.quote }}"</p>
+            <div class="text-xs sm:text-sm text-gray-500">
               Tiết kiệm: <span class="font-semibold text-green-600">{{ story.moneySaved.toLocaleString() }}đ</span>
             </div>
           </div>
@@ -162,28 +162,28 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 px-4 animate-gradient">
+    <section class="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 animate-gradient">
       <div class="container mx-auto text-center">
         <h2 
           ref="ctaTitle"
-          class="text-4xl font-bold text-white mb-4"
+          class="text-3xl sm:text-4xl font-bold text-white mb-4"
         >
           Sẵn sàng bắt đầu hành trình cai thuốc?
         </h2>
         <p 
           ref="ctaSubtitle"
-          class="text-xl text-green-100 mb-8 max-w-2xl mx-auto"
+          class="text-base sm:text-lg lg:text-xl text-green-100 mb-6 sm:mb-8 max-w-2xl mx-auto px-4"
         >
           Hàng ngàn người đã thành công với QuitSmart. Bạn cũng có thể làm được!
         </p>
         <div 
           ref="ctaButtons"
-          class="space-x-4"
+          class="flex flex-col sm:flex-row gap-4 sm:gap-0 sm:space-x-4 items-center justify-center px-4"
         >
-          <button class="px-8 py-4 bg-white text-green-600 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-110 hover:shadow-xl transform animate-float hover:cursor-pointer">
+          <button class="w-full sm:w-auto px-6 py-3 sm:px-8 sm:py-4 bg-white text-green-600 rounded-lg text-base sm:text-lg font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-110 hover:shadow-xl transform animate-float hover:cursor-pointer">
             Đăng ký miễn phí
           </button>
-          <button class="px-8 py-4 border-2 border-white text-white rounded-lg text-lg font-semibold hover:bg-white hover:text-green-600 transition-all duration-300 hover:scale-110 hover:shadow-xl transform animate-float-slow hover:cursor-pointer">
+          <button class="w-full sm:w-auto px-6 py-3 sm:px-8 sm:py-4 border-2 border-white text-white rounded-lg text-base sm:text-lg font-semibold hover:bg-white hover:text-green-600 transition-all duration-300 hover:scale-110 hover:shadow-xl transform animate-float-slow hover:cursor-pointer">
             Xem demo
           </button>
         </div>
@@ -191,42 +191,52 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 px-4">
+    <footer class="bg-gray-900 text-white py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
       <div class="container mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
-            <div class="flex items-center space-x-2 mb-4">
-              <Heart class="h-6 w-6 text-green-500" />
-              <span class="text-xl font-bold">QuitSmart</span>
-            </div>
-            <p class="text-gray-400">Ứng dụng hỗ trợ cai thuốc lá thông minh và hiệu quả</p>
+        <!-- Logo section - separate row on mobile -->
+        <div class="mb-8 text-center sm:text-left">
+          <div class="flex items-center justify-center sm:justify-start space-x-2 mb-4">
+            <Heart class="h-5 w-5 sm:h-6 sm:w-6 text-green-500" />
+            <span class="text-lg sm:text-xl font-bold">QuitSmart</span>
           </div>
+          <p class="text-sm sm:text-base text-gray-400 max-w-md mx-auto sm:mx-0">Ứng dụng hỗ trợ cai thuốc lá thông minh và hiệu quả</p>
+        </div>
+        
+        <!-- Links grid - 3 columns on mobile -->
+        <div class="grid grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8">
+          <!-- Product links -->
           <div>
-            <h4 class="font-semibold mb-4">Sản phẩm</h4>
-            <ul class="space-y-2 text-gray-400">
-              <li><a href="#features" class="hover:text-white transition-colors">Tính năng</a></li>
-              <li><a href="/pricing" class="hover:text-white transition-colors">Bảng giá</a></li>
-              <li><a href="/demo" class="hover:text-white transition-colors">Demo</a></li>
+            <h4 class="text-sm sm:text-base font-semibold mb-3 sm:mb-4 text-white">Sản phẩm</h4>
+            <ul class="space-y-2 text-xs sm:text-sm lg:text-base text-gray-400">
+              <li><a href="#features" class="hover:text-white transition-colors block py-1">Tính năng</a></li>
+              <li><a href="/pricing" class="hover:text-white transition-colors block py-1">Bảng giá</a></li>
+              <li><a href="/demo" class="hover:text-white transition-colors block py-1">Demo</a></li>
             </ul>
           </div>
+          
+          <!-- Support links -->
           <div>
-            <h4 class="font-semibold mb-4">Hỗ trợ</h4>
-            <ul class="space-y-2 text-gray-400">
-              <li><a href="/help" class="hover:text-white transition-colors">Trợ giúp</a></li>
-              <li><a href="/contact" class="hover:text-white transition-colors">Liên hệ</a></li>
-              <li><a href="/faq" class="hover:text-white transition-colors">FAQ</a></li>
+            <h4 class="text-sm sm:text-base font-semibold mb-3 sm:mb-4 text-white">Hỗ trợ</h4>
+            <ul class="space-y-2 text-xs sm:text-sm lg:text-base text-gray-400">
+              <li><a href="/help" class="hover:text-white transition-colors block py-1">Trợ giúp</a></li>
+              <li><a href="/contact" class="hover:text-white transition-colors block py-1">Liên hệ</a></li>
+              <li><a href="/faq" class="hover:text-white transition-colors block py-1">FAQ</a></li>
             </ul>
           </div>
+          
+          <!-- Legal links -->
           <div>
-            <h4 class="font-semibold mb-4">Pháp lý</h4>
-            <ul class="space-y-2 text-gray-400">
-              <li><a href="/privacy" class="hover:text-white transition-colors">Chính sách bảo mật</a></li>
-              <li><a href="/terms" class="hover:text-white transition-colors">Điều khoản sử dụng</a></li>
+            <h4 class="text-sm sm:text-base font-semibold mb-3 sm:mb-4 text-white">Pháp lý</h4>
+            <ul class="space-y-2 text-xs sm:text-sm lg:text-base text-gray-400">
+              <li><a href="/privacy" class="hover:text-white transition-colors block py-1">Bảo mật</a></li>
+              <li><a href="/terms" class="hover:text-white transition-colors block py-1">Điều khoản</a></li>
             </ul>
           </div>
         </div>
-        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2025 QuitSmart. Tất cả quyền được bảo lưu.</p>
+        
+        <!-- Copyright section -->
+        <div class="border-t border-gray-800 pt-6 sm:pt-8 text-center">
+          <p class="text-sm sm:text-base text-gray-400">&copy; 2025 QuitSmart. Tất cả quyền được bảo lưu.</p>
         </div>
       </div>
     </footer>
@@ -249,9 +259,9 @@ import {
 } from 'lucide-vue-next'
 
 // Import components
-import HealthInfo from '../components/HealthInfo.vue'
-import HealthTimeline from '../components/HealthTimeline.vue'
-import QuitMethods from '../components/QuitMethods.vue'
+import HealthInfo from '../components/landing-page/HealthInfo.vue'
+import HealthTimeline from '../components/landing-page/HealthTimeline.vue'
+import QuitMethods from '../components/landing-page/QuitMethods.vue'
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger)
